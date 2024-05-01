@@ -3,9 +3,9 @@ import json
 import numpy as np
 import pickle
 
-with open("C:/Users/vsoun/OneDrive/Documents/BHP/server/artifacts/columns.json","r") as f:
+with open("./BHP/server/artifacts/columns.json","r") as f:
     __data_columns=json.load(f)['data_columns']
-with open('C:/Users/vsoun/OneDrive/Documents/BHP/server/artifacts/bangalore_home_prices_model.pickle', 'rb') as f:
+with open('./BHP/server/artifacts/bangalore_home_prices_model.pickle', 'rb') as f:
     __model = pickle.load(f)
 
 st.title("Bangalore House Price Prediction")
